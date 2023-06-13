@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RealEstateApp2.Pages.HomePage">
+             x:Class="RealEstateApp2.Pages.HomePage"
+             NavigationPage.HasNavigationBar="False">
 
     <ScrollView>
         <Grid Margin="20" RowSpacing="20">
@@ -33,23 +34,31 @@
             <Label Text="Categories"
                    FontSize="Large"/>
             <CollectionView x:Name="CvCategories"
-                            HeightRequest="50">
+                            HeightRequest="50"
+                            SelectionMode="Single"
+                            SelectionChanged="CvCategories_SelectionChanged">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout ItemSpacing="20" Orientation="Horizontal"/>
                     </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Frame>
-                                <HorizontalStackLayout Spacing="5">
-                                    <Image Aspect="AspectFit"
-                                           HeightRequest="20"
-                                           WidthRequest="20"
+                            <!--<Frame>-->
+                            <Border Margin="0"
+                                    Padding="7,0" 
+                                    StrokeShape="RoundRectangle 10">
+                                <HorizontalStackLayout Spacing="0">
+                                    <Image Aspect="AspectFill"
+                                           HeightRequest="25"
+                                           WidthRequest="25"
                                            Source="{Binding FullImageUrl}"/>
                                     <Label VerticalOptions="Center"
-                                           FontSize="Medium"
+                                           FontSize="Subtitle"
+                                           
+                                           TextColor="Black"
                                            Text="{Binding Name}"/>
                                 </HorizontalStackLayout>
-                            </Frame>
+                            </Border>
+                            <!--</Frame>-->
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
             </CollectionView>
@@ -59,7 +68,9 @@
             <Label Text="Top Picks"
                    FontSize="Large"/>
             <CollectionView x:Name="CvTopPicks"
-                            HeightRequest="350">
+                            HeightRequest="350"
+                            SelectionMode="Single"
+                            SelectionChanged="CvTopPicks_SelectionChanged">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout ItemSpacing="20" Orientation="Horizontal"/>
                     </CollectionView.ItemsLayout>

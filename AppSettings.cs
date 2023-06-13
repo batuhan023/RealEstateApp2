@@ -8,7 +8,7 @@ namespace RealEstateApp2
 {
     public static class AppSettings
     {
-        public static string ApiUrl = "https://lastbluepage68.conveyor.cloud/";
+        public static string ApiUrl = "https://firstashboat38.conveyor.cloud/";
        
     }
     

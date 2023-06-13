@@ -26,6 +26,7 @@ public partial class RegisterPage : ContentPage
 
     async void TapLogin_Tapped(object sender, TappedEventArgs e)
     {
-        await Navigation.PushAsync(new LoginPage());
+        //await Navigation.PushAsync(new LoginPage());
+         await Navigation.PopModalAsync();
     }
 }

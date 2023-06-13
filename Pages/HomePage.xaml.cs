@@ -1,3 +1,4 @@
+using RealEstateApp2.Models;
 using RealEstateApp2.Services;
 
 namespace RealEstateApp2.Pages;
@@ -23,5 +24,21 @@ public partial class HomePage : ContentPage
     {
        var categories = await _homeService.GetCategories();
        CvCategories.ItemsSource = categories;
+    }
+
+    void CvCategories_SelectionChanged(object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
+    {
+        var currentSelection = e.CurrentSelection.FirstOrDefault() as Category;
+        if (currentSelection == null) return;
+        Navigation.PushAsync(new PropertiesListPage(currentSelection.Id, currentSelection.Name));
+        ((CollectionView)sender).SelectedItem = null;
+    }
+
+    void CvTopPicks_SelectionChanged(object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
+    {
+        var currentSelection = e.CurrentSelection.FirstOrDefault() as TrendingProperty;
+        if (currentSelection == null) return;
+        Navigation.PushModalAsync(new PropertyDetailPage(currentSelection.Id));
+        ((CollectionView)sender).SelectedItem = null;
     }
 }
