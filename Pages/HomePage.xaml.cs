@@ -41,4 +41,9 @@ public partial class HomePage : ContentPage
         Navigation.PushModalAsync(new PropertyDetailPage(currentSelection.Id));
         ((CollectionView)sender).SelectedItem = null;
     }
+
+    void TapSearch_Tapped(object sender, TappedEventArgs e)
+    {
+        Navigation.PushModalAsync(new SearchPage());
+    }
 }

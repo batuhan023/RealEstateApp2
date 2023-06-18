@@ -31,14 +31,14 @@
                          VerticalOptions="Start"
                          Clicked="ImgbackBtn_Clicked"/>
             <ImageButton x:Name="ImgbookmarkBtn"
-                         Source="bookmark_empty_icon"
                          CornerRadius="10"
                          BackgroundColor="White"
                          HeightRequest="40"
                          WidthRequest="40"
                          Padding="5"
                          HorizontalOptions="EndAndExpand"
-                         VerticalOptions="Start"/>
+                         VerticalOptions="Start"
+                         Clicked="ImgbookmarkBtn_Clicked"/>
         </StackLayout>
         <VerticalStackLayout Grid.Row="3"
                              Margin="20">
