@@ -63,7 +63,8 @@ public partial class PropertyDetailPage : ContentPage
             //Add a bookmark
             var addBookmark = new AddBookmark()
             {
-                User_Id = 9,
+                User_Id = Preferences.Get("userid", string.Empty),
+                //User_Id = 3,
                 PropertyId = propertyId
             };
             var response = await _apiService.AddBookmark(addBookmark);
