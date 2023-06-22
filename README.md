@@ -12,7 +12,7 @@
 
 ### Photos:
 
-![1](https://github.com/batuhan023/RealEstateApp2/assets/92747705/317e9ad3-5bcc-43b6-ab0a-356a597d61e2)     
+![1](https://github.com/batuhan023/RealEstateApp2/assets/92747705/317e9ad3-5bcc-43b6-ab0a-356a597d61e2)     ------------    ![2](https://github.com/batuhan023/RealEstateApp2/assets/92747705/159679fd-07bd-4913-bc8b-f70b88ba6209)
 
 												            
 -------------------------------------------------------------------------------------------------------													   
