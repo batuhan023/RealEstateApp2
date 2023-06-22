@@ -12,6 +12,24 @@
 
 ### Photos:
 
+<table>
+	<thead>
+		<tr>
+			![1](https://github.com/batuhan023/RealEstateApp2/assets/92747705/317e9ad3-5bcc-43b6-ab0a-356a597d61e2)
+			<th>Başlık 2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			![2](https://github.com/batuhan023/RealEstateApp2/assets/92747705/159679fd-07bd-4913-bc8b-f70b88ba6209)
+			<td>Hücre 2</td>
+		</tr>
+		<tr>
+			<td>Hücre 3</td>
+			<td>Hücre 4</td>
+		</tr>
+	</tbody>
+</table>
 ![1](https://github.com/batuhan023/RealEstateApp2/assets/92747705/317e9ad3-5bcc-43b6-ab0a-356a597d61e2)
 
 
